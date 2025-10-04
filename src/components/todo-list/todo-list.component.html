@@ -1,0 +1,16 @@
+<div class="todo-list-container">
+    <div class="todo-list">
+        <h1 class="list-title">ToDo List</h1>
+
+        <div class="add-task-bar">
+            <input type="text" class="add-task-input" #taskInput>
+            <button class="add-task-btn" (click)="createTask(taskInput.value, taskInput)">Add</button>
+        </div>
+
+        <div class="list">
+            @for (task of tasksList; track task.id) {
+                <todo-task [task]="task" (taskDeleted)="deleteTask($event)" (taskSaved)="editTask($event)"/>
+            }
+        </div>
+    </div>
+</div>

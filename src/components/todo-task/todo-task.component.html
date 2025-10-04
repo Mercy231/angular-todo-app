@@ -1,0 +1,18 @@
+<div class="todo-task" [class.completed]="task.isCompleted">
+    <input type="checkbox" class="task-checkbox" [checked]="task.isCompleted">
+    @if (isEditing) {
+        <input type="text" class="task-input" [(ngModel)]="draftTitle">
+
+        <div class="settings">
+            <button class="save-btn" (click)="onSaveClick()">Save</button>
+            <button class="cancel-btn" (click)="onCancelClick()">Cancel</button>
+        </div>
+    } @else {
+        <span class="title">{{ task.title }}</span>
+        
+        <div class="settings">
+            <button class="edit-btn" (click)="onEditClick()">Edit</button>
+            <button class="delete-btn" (click)="onDelete()">Delete</button>
+        </div>
+    }
+</div>

@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    color: #222;
+    min-height: 100vh;
+    transition: background 0.3s;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #1565c0;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #222;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67,233,123,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+    box-shadow: 0 4px 16px rgba(67,233,123,0.25);
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    padding: 8px;
+    outline: none;
+    transition: border 0.2s;
+}
+input:focus, textarea:focus {
+    border-color: #43e97b;
+}
