@@ -34,9 +34,8 @@ export class ToDoTaskComponent {
 
     public onSaveClick(): void {   
         this.isEditing = false;
-        if (this.task.title !== this.draftTitle) {
-            console.log("works");
-            
+        
+        if (this.task.title !== this.draftTitle) {  
             this.taskSaved.emit({ ...this.task, title: this.draftTitle });
         }
     }
