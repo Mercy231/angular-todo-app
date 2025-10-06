@@ -1,5 +1,6 @@
 <div class="todo-task" [class.completed]="task.isCompleted">
     <input type="checkbox" class="task-checkbox" [checked]="task.isCompleted">
+    
     @if (isEditing) {
         <input type="text" class="task-input" [(ngModel)]="draftTitle">
 

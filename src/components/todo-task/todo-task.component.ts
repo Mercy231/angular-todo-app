@@ -8,9 +8,9 @@ export interface ToDoTask {
 } 
 
 @Component({
-    selector: 'todo-task',
-    templateUrl: './todo-task.component.html',
-    styleUrl: './todo-task.component.scss',
+    selector: "todo-task",
+    templateUrl: "./todo-task.component.html",
+    styleUrl: "./todo-task.component.scss",
     imports: [FormsModule]
 })
 export class ToDoTaskComponent {

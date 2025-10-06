@@ -2,9 +2,9 @@ import { Component } from "@angular/core";
 import { ToDoTask, ToDoTaskComponent } from "../todo-task/todo-task.component";
 
 @Component({
-    selector: 'todo-list',
-    templateUrl: './todo-list.component.html',
-    styleUrl: './todo-list.component.scss',
+    selector: "todo-list",
+    templateUrl: "./todo-list.component.html",
+    styleUrl: "./todo-list.component.scss",
     imports: [ToDoTaskComponent],
 })
 export class ToDoListComponent {

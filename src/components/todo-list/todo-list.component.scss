@@ -45,6 +45,7 @@
             font-size: 1rem;
             transition: border 0.2s;
         }
+
         .add-task-input:focus {
             border-color: #43e97b;
         }
@@ -61,6 +62,7 @@
             border: none;
             transition: 0.2s all;
         }
+        
         .add-task-btn:hover {
             background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
         }
